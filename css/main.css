@@ -82,7 +82,7 @@ body, html {
 }
 .parallax {
     /* The image used */
-    background-image: url('/Users/Matthew/Developmentally/images/mountain.jpeg');
+    background-image: url('images/mountain.jpeg');
 
     /* Full height */
     height: 100%;
