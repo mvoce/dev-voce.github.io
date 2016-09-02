@@ -1,0 +1,112 @@
+/* ### Navbar Styling ### 
+
+To change the colours head to http://work.smarchal.com/twbscolor/
+
+*/
+
+.navbar-default {
+  background-color: #424242;
+  border-color: #8e44ad;
+}
+.navbar-default .navbar-brand {
+  color: #00ccff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #e5ff00;
+}
+.navbar-default .navbar-text {
+  color: #00ccff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #00ccff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e5ff00;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #e5ff00;
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #e5ff00;
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-toggle {
+  border-color: #8e44ad;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #00ccff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #00ccff;
+}
+.navbar-default .navbar-link {
+  color: #00ccff;
+}
+.navbar-default .navbar-link:hover {
+  color: #e5ff00;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #00ccff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e5ff00;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e5ff00;
+    background-color: #8e44ad;
+  }
+}
+
+/* ============
+	Parallax
+============ */
+body, html {
+    height: 100%;
+}
+.parallax {
+    /* The image used */
+    background-image: url('/Users/Matthew/Developmentally/images/mountain.jpeg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face{
+    font-family: "sanfran";
+    src: url('/Users/Matthew/Developmentally/fonts/SF-UI-Display-Ultralight.otf');
+}
+  body {
+      font-family: 'Sanfran', sans-serif;
+      font-weight: 300;
+  }
+
+  .mainlogo{
+      position:relative;
+      display:block;
+      width: auto;
+      height: 30px;
+      margin-top: -5px;
+  }
