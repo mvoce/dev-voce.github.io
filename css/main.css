@@ -1,3 +1,13 @@
+.jumbotron { 
+margin-bottom: 0px;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+#top-jumbotron{ 
+margin-bottom: 20px;
+}
+
 /* ### Navbar Styling ### 
 
 To change the colours head to http://work.smarchal.com/twbscolor/
@@ -72,6 +82,20 @@ To change the colours head to http://work.smarchal.com/twbscolor/
     color: #e5ff00;
     background-color: #8e44ad;
   }
+  #top-jumbotron{ 
+margin-bottom: 0px;
+margin-top: 40px;
+margin-left: 0px;
+margin-right: 0px;
+padding-bottom: 20px;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+#bottom-jumbotron{
+margin-top: 0px;
+margin-bottom: 20px;
+}
 }
 
 /* ============
