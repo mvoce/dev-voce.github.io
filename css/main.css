@@ -82,7 +82,7 @@ body, html {
 }
 .parallax {
     /* The image used */
-    background-image: url('images/mountain.jpeg');
+    background-image: url('/images/mountain.jpeg');
 
     /* Full height */
     height: 100%;
@@ -96,7 +96,7 @@ body, html {
 
 @font-face{
     font-family: "sanfran";
-    src: url('/Users/Matthew/Developmentally/fonts/SF-UI-Display-Ultralight.otf');
+    src: url('/fonts/SF-UI-Display-Ultralight.otf');
 }
   body {
       font-family: 'Sanfran', sans-serif;
