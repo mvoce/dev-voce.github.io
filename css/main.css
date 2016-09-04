@@ -134,7 +134,7 @@ body, html { height: 100%; }
 	
 	.parallax
 	{
-		background-image: url('https://s-media-cache-ak0.pinimg.com/236x/16/e2/59/16e25906aa0aaa6150232d8918d021f1.jpg');
+		background-image: url("/images/mountain-small.jpeg");
 		height: 100%;
 		background-attachment: fixed;
 		background-position: center;
