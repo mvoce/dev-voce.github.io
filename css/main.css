@@ -138,14 +138,16 @@ body, html {
 }
 
 @font-face{
-		
-    /*font-family: "sanfran";
-    src: url("/fonts/SF-UI-Display-Ultralight.otf");*/
+    font-family: "sanfran";
+    src: url("/fonts/SF-UI-Display-Ultralight.otf");
+}
+@font-face{
     font-family:"bebas";
     src: url("/fonts/bebasneue-light.otf");
 }
+
   body {
-      font-family: 'bebas', sans-serif;
+      font-family: 'sanfran', sans-serif;
       font-weight: 300;
   }
 
