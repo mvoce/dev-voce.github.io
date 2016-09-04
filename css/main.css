@@ -71,7 +71,9 @@ To change the colours head to http://work.smarchal.com/twbscolor/
 @media
 ===============*/
 
-@media (max-width: 767px) {
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #00ccff;
   }
