@@ -119,8 +119,7 @@ body, html { height: 100%; }
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
-@media only screen 
-and (max-width : 320px) /* Custom, iPhone Retina */
+@media (max-width : 320px) /* Custom, iPhone Retina */
 and (max-width : 480px) /* Extra Small Devices, Phones */
 and (max-width : 768px) /* Small Devices, Tablets */
 {
