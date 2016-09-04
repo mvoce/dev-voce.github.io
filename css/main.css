@@ -1,18 +1,48 @@
-.jumbotron { 
-margin-bottom: 0px;
-margin-top: 0px;
-margin-left: 0px;
-margin-right: 0px;
+/*==============================
+=            Fonts             =
+==============================*/
+@font-face{
+    font-family: "sanfran";
+    src: url("/fonts/SF-UI-Display-Ultralight.otf");
 }
-#bottom-jumbotron{ 
-margin-bottom: 20px;
+@font-face{
+    font-family:"bebas";
+    src: url("/fonts/bebasneue-light.otf");
 }
 
-/* ### Navbar Styling ### 
+/*=================================
+=            Main CSS             =
+=================================*/
 
-To change the colours head to http://work.smarchal.com/twbscolor/
+body
+{
+	font-family: 'sanfran', sans-serif;
+	font-weight: 300;
+}
 
-*/
+.jumbotron
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#bottom-jumbotron { margin-bottom: 20px; }
+
+.mainlogo
+{
+	position: relative;
+	display: block;
+	width: auto;
+	height: 30px;
+	margin-top: -5px;
+}
+/*===================================================================
+=            			Navbar     			    =
+=								    =
+= To change the colours head to http://work.smarchal.com/twbscolor/ =
+===================================================================*/ 
 
 .navbar-default {
   background-color: #424242;
@@ -67,94 +97,70 @@ To change the colours head to http://work.smarchal.com/twbscolor/
 .navbar-default .navbar-link:hover {
   color: #e5ff00;
 }
-/*==============
-@media
-===============*/
-@media (max-width: 300px){
-	.parallax {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/236x/16/e2/59/16e25906aa0aaa6150232d8918d021f1.jpg");
-	}
+
+/*================================
+=            Parallax            =
+================================*/
+body, html { height: 100%; }
+
+.parallax
+{
+	/* The image used */
+	background-image: url("/images/mountain.jpeg");
+	/* Full height */
+	height: 100%;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
 @media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) {
+and (max-width : 320px) /* Custom, iPhone Retina */
+and (max-width : 480px) /* Extra Small Devices, Phones */
+and (max-width : 768px) /* Small Devices, Tablets */
+{
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #00ccff; }
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus { color: #e5ff00; }
 	
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #00ccff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #e5ff00;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #e5ff00;
-    background-color: #8e44ad;
-  }
-  .parallax {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/236x/16/e2/59/16e25906aa0aaa6150232d8918d021f1.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-   #top-jumbotron{ 
-	margin-bottom: 0px;
-	margin-top: 40px;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
+	{
+		color: #e5ff00;
+		background-color: #8e44ad;
 	}
-    #bottom-jumbotron{
-	margin-top: 0px;
-	margin-bottom: 20px;
+	
+	.parallax
+	{
+		background-image: url('https://s-media-cache-ak0.pinimg.com/236x/16/e2/59/16e25906aa0aaa6150232d8918d021f1.jpg');
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#top-jumbotron
+	{
+		margin-bottom: 0px;
+		margin-top: 40px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	#bottom-jumbotron
+	{
+		margin-top: 0px;
+		margin-bottom: 20px;
 	}
 }
-
-
-/* ============
-Parallax
-============ */
-body, html {
-    height: 100%;
-}
-.parallax {
-    /* The image used */
-    background-image: url("/images/mountain.jpeg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@font-face{
-    font-family: "sanfran";
-    src: url("/fonts/SF-UI-Display-Ultralight.otf");
-}
-@font-face{
-    font-family:"bebas";
-    src: url("/fonts/bebasneue-light.otf");
-}
-
-  body {
-      font-family: 'sanfran', sans-serif;
-      font-weight: 300;
-  }
-
-  .mainlogo{
-      position:relative;
-      display:block;
-      width: auto;
-      height: 30px;
-      margin-top: -5px;
-  }
