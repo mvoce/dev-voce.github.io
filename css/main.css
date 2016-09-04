@@ -119,10 +119,7 @@ body, html { height: 100%; }
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
-@media (max-width : 320px) /* Custom, iPhone Retina */
-and (max-width : 480px) /* Extra Small Devices, Phones */
-and (max-width : 768px) /* Small Devices, Tablets */
-{
+@media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #00ccff; }
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus { color: #e5ff00; }
@@ -148,7 +145,7 @@ and (max-width : 768px) /* Small Devices, Tablets */
 	#top-jumbotron
 	{
 		margin-bottom: 0px;
-		margin-top: 80px;
+		margin-top: 40px;
 		margin-left: 0px;
 		margin-right: 0px;
 		padding-bottom: 20px;
