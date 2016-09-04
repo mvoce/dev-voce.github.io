@@ -129,10 +129,9 @@ body, html {
 @font-face{
 		
     /*font-family: "sanfran";
-    src: url('/fonts/SF-UI-Display-Ultralight.otf');*/
-    font-family: "bebas";
-    src: url('/fonts/bebasneue-light.otf');
-    
+    src: url("/fonts/SF-UI-Display-Ultralight.otf");*/
+    font-family:"bebas";
+    src: url("/fonts/bebasneue-light.otf");
 }
   body {
       font-family: 'bebas', sans-serif;
