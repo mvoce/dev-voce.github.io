@@ -67,6 +67,9 @@ To change the colours head to http://work.smarchal.com/twbscolor/
 .navbar-default .navbar-link:hover {
   color: #e5ff00;
 }
+/*==============
+@media
+===============*/
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -82,24 +85,29 @@ To change the colours head to http://work.smarchal.com/twbscolor/
     color: #e5ff00;
     background-color: #8e44ad;
   }
-  #top-jumbotron{ 
-margin-bottom: 0px;
-margin-top: 40px;
-margin-left: 0px;
-margin-right: 0px;
-padding-bottom: 20px;
-padding-top: 20px;
-padding-left: 20px;
-padding-right: 20px;
-}
-#bottom-jumbotron{
-margin-top: 0px;
-margin-bottom: 20px;
-}
+  .parallax {
+    /* The image used */
+    background-image: url("/images/mountain-small.jpeg");
+  }
+   #top-jumbotron{ 
+	margin-bottom: 0px;
+	margin-top: 40px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+    #bottom-jumbotron{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	}
 }
 
+
 /* ============
-	Parallax
+Parallax
 ============ */
 body, html {
     height: 100%;
@@ -119,11 +127,15 @@ body, html {
 }
 
 @font-face{
-    font-family: "sanfran";
-    src: url('/fonts/SF-UI-Display-Ultralight.otf');
+		
+    /*font-family: "sanfran";
+    src: url('/fonts/SF-UI-Display-Ultralight.otf');*/
+    font-family: "bebas";
+    src: url('/fonts/bebasneue-light.otf');
+    
 }
   body {
-      font-family: 'Sanfran', sans-serif;
+      font-family: 'bebas', sans-serif;
       font-weight: 300;
   }
 
