@@ -27,9 +27,6 @@ body
 	margin-left: 0px;
 	margin-right: 0px;
 }
-
-#bottom-jumbotron { margin-bottom: 20px; }
-
 .mainlogo
 {
 	position: relative;
@@ -38,6 +35,11 @@ body
 	height: 30px;
 	margin-top: -5px;
 }
+.spacing {
+	background-color: #fff;
+	height: 20px;
+}
+#bottom-parallax {background-image: url('http://www.planwallpaper.com/static/images/Awesome-iPhone-Wallpapers.jpg');}
 /*===================================================================
 =            			Navbar     			    =
 =								    =
@@ -134,14 +136,15 @@ body, html { height: 100%; }
 	
 	.parallax
 	{
-		background-image: url('http://www.planwallpaper.com/static/images/Awesome-iPhone-Wallpapers.jpg');
+		/* background-image: url('http://www.planwallpaper.com/static/images/Awesome-iPhone-Wallpapers.jpg');*/
 		height: 100%;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-	
+	#top-parallax {background-image: url('http://www.planwallpaper.com/static/images/Awesome-iPhone-Wallpapers.jpg');}
+	#bottom-parallax {background-image: url('http://www.jailbreakiosx.com/wp-content/uploads/2014/08/Impressionist-style-iPhone-wallpaper-9.jpg');}
 	#top-jumbotron
 	{
 		margin-bottom: 0px;
