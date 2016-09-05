@@ -39,7 +39,10 @@ body
 	background-color: #fff;
 	height: 20px;
 }
-
+footer {
+	background-color: #424242;
+	height: 200px;
+}
 /*===================================================================
 =            			Navbar     			    =
 =								    =
