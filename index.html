@@ -131,23 +131,40 @@
 
 </body>
 
-<script> src="/scripts/smooth-scrolling.js" type="text/javascript"</script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links in navbar + footer link
+$(".navbar a, footer a[href='#pagetitle']").on('click', function(event) {
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+// Prevent default anchor click behavior
+event.preventDefault();
 
-<script> src="/scripts/navbar-click.js" type="text/javascript"</script>
+// Store hash
+var hash = this.hash;
 
-<!--<script>
-$('body').scrollspy({
-   offset: offsetHeight
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 900, function(){
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+} // End if
 });
 
-$('.navbar li a').click(function (event) {
-    var scrollPos = $('body > .container').find($(this).attr('href')).offset().top - (offsetHeight - 1);
-    $('body,html').animate({
-        scrollTop: scrollPos
-    }, 500, function () {
-        $(".btn-navbar").click();
-    });
-    return false;
+$(window).scroll(function() {
+$(".slideanim").each(function(){
+var pos = $(this).offset().top;
+
+var winTop = $(window).scrollTop();
+if (pos < winTop + 600) {
+$(this).addClass("slide");
+}
 });
-</script>-->
+});
+})
+</script>
 </html>
