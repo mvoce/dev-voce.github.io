@@ -42,6 +42,10 @@ body
 
 #top-jumbotron {margin-top: 40px;}
 
+.bg-grey {
+	background-color: #ebebeb;
+}
+
 footer {
 	background-color: #424242;
 	height: 200px;
